@@ -1,0 +1,460 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/grey">
+
+        <ImageView
+            android:id="@+id/back_icon_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="24dp"
+            android:src="@drawable/thin_long_arrow_left_icon"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:text="Profile"
+            android:textColor="@color/text_color_light"
+            android:textSize="18sp"
+            app:layout_constraintBottom_toBottomOf="@+id/back_icon_button"
+            app:layout_constraintStart_toEndOf="@+id/back_icon_button"
+            app:layout_constraintTop_toTopOf="@+id/back_icon_button" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            android:background="@drawable/support_button_bg"
+            android:clickable="true"
+            android:focusable="true"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:padding="8dp"
+            android:paddingStart="12dp"
+            android:paddingEnd="16dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:contentDescription="Support"
+                android:src="@drawable/contact_support"
+                app:tint="@color/text_color_dark" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:text="support"
+                android:textColor="@color/text_color_dark"
+                android:textSize="14sp" />
+        </LinearLayout>
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/profile_image"
+            android:layout_width="66dp"
+            android:layout_height="66dp"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="36dp"
+            android:src="@drawable/photo"
+            app:civ_border_color="#FF000000"
+            app:civ_border_width="2dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/back_icon_button"
+            tools:ignore="MissingConstraints" />
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="12dp"
+            android:text="Mubashshir Khan"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            app:layout_constraintStart_toEndOf="@+id/profile_image"
+            app:layout_constraintTop_toTopOf="@+id/profile_image" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="12dp"
+            android:text="member since Dec, 2025"
+            android:textColor="@color/text_color_dark"
+            app:layout_constraintBottom_toBottomOf="@+id/profile_image"
+            app:layout_constraintStart_toEndOf="@+id/profile_image" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="24dp"
+            android:src="@drawable/edit_round_line_icon"
+            app:layout_constraintBottom_toTopOf="@+id/textView2"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView3" />
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/cred_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="32dp"
+            android:background="@drawable/square_bg"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/profile_image">
+
+            <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="24dp"
+                android:src="@drawable/car_surveillance"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="12dp"
+                android:layout_marginStart="12dp"
+                android:drawablePadding="8dp"
+                android:gravity="center_vertical"
+                android:text="CRED garage"
+                android:textColor="@color/white"
+                android:textSize="12sp"
+                android:textStyle="bold"
+                app:drawableRightCompat="@drawable/thin_arrow_right_icon"
+                app:layout_constraintBottom_toBottomOf="@+id/imageView"
+                app:layout_constraintStart_toEndOf="@+id/imageView"
+                app:layout_constraintTop_toBottomOf="@+id/imageView"
+                app:layout_constraintVertical_bias="0.466" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="12dp"
+                android:text="get to know your vehicle, inside out"
+                android:textColor="@color/text_color_dark"
+                android:textSize="11sp"
+                app:layout_constraintBottom_toTopOf="@+id/imageView"
+                app:layout_constraintStart_toEndOf="@+id/imageView"
+                app:layout_constraintTop_toTopOf="@+id/imageView" />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <LinearLayout
+            android:id="@+id/ll1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="32dp"
+            android:layout_marginEnd="24dp"
+            android:orientation="horizontal"
+            app:layout_constraintTop_toBottomOf="@id/cred_layout">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:drawablePadding="12dp"
+                android:gravity="center_vertical"
+                android:paddingStart="12dp"
+                android:text="credit score"
+                android:textColor="@color/text_color_dark"
+                app:drawableStartCompat="@drawable/credit_icon" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawablePadding="12dp"
+                android:gravity="center_vertical"
+                android:paddingEnd="12dp"
+                android:text="757"
+                android:textColor="@color/white"
+                app:drawableEndCompat="@drawable/thin_arrow_right_icon" />
+
+
+        </LinearLayout>
+
+        <View
+            android:id="@+id/view1"
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="32dp"
+            android:background="@color/white"
+            app:layout_constraintBottom_toTopOf="@id/ll2"
+            app:layout_constraintTop_toBottomOf="@id/ll1" />
+
+        <LinearLayout
+            android:id="@+id/ll2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="24dp"
+            android:orientation="horizontal"
+            app:layout_constraintTop_toBottomOf="@id/view1">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:drawablePadding="12dp"
+                android:gravity="center_vertical"
+                android:paddingStart="12dp"
+                android:text="lifetime cashback"
+
+                android:textColor="@color/text_color_dark"
+                app:drawableStartCompat="@drawable/cashback_icon" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawablePadding="12dp"
+                android:gravity="center_vertical"
+                android:paddingStart="12dp"
+                android:paddingEnd="12dp"
+                android:text="$3"
+
+                android:textColor="@color/white"
+                app:drawableEndCompat="@drawable/thin_arrow_right_icon" />
+
+
+        </LinearLayout>
+
+        <View
+            android:id="@+id/view2"
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_marginStart="32dp"
+            android:layout_marginEnd="32dp"
+            android:background="@color/white"
+            app:layout_constraintBottom_toTopOf="@id/ll3"
+            app:layout_constraintTop_toBottomOf="@id/ll2" />
+
+        <LinearLayout
+            android:id="@+id/ll3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="24dp"
+            android:orientation="horizontal"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/ll2"
+            tools:layout_editor_absoluteX="24dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:drawablePadding="12dp"
+                android:gravity="center_vertical"
+                android:paddingStart="12dp"
+                android:text="bank balance"
+                android:textColor="@color/text_color_dark"
+                app:drawableStartCompat="@drawable/bank_balance" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawablePadding="12dp"
+                android:gravity="center_vertical"
+                android:paddingEnd="12dp"
+                android:text="check"
+                android:textColor="@color/white"
+                app:drawableEndCompat="@drawable/thin_arrow_right_icon" />
+
+
+        </LinearLayout>
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraint_layout_2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:background="@color/grey_dark">
+
+        <TextView
+            android:id="@+id/reward_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="24dp"
+            android:text="YOUR REWARDS AND BENIFITS"
+            android:textColor="@color/text_color_dark"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+        <LinearLayout
+            android:id="@+id/ll4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="24dp"
+            android:orientation="vertical"
+            app:layout_constraintTop_toBottomOf="@id/reward_text">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:padding="4dp"
+                android:text="cashback balance"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                app:drawableEndCompat="@drawable/line_angle_right_icon" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawablePadding="12dp"
+                android:gravity="center_vertical"
+                android:padding="4dp"
+                android:text="$0"
+                android:textColor="@color/text_color_dark"
+                android:textSize="10sp" />
+        </LinearLayout>
+
+        <View
+            android:id="@+id/view3"
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="24dp"
+            android:background="@color/white"
+            app:layout_constraintBottom_toTopOf="@id/ll4"
+            app:layout_constraintTop_toBottomOf="@id/ll5" />
+
+        <LinearLayout
+            android:id="@+id/ll5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="24dp"
+            android:orientation="vertical"
+            app:layout_constraintTop_toBottomOf="@id/view3">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:padding="4dp"
+                android:text="coins"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                app:drawableEndCompat="@drawable/line_angle_right_icon" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:padding="4dp"
+                android:text="26,25,840"
+                android:textColor="@color/text_color_dark"
+
+                android:textSize="10sp" />
+
+
+        </LinearLayout>
+
+        <View
+            android:id="@+id/view4"
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="12dp"
+            android:layout_marginEnd="24dp"
+            android:background="@color/white"
+            app:layout_constraintTop_toBottomOf="@+id/ll5"
+            tools:layout_editor_absoluteX="32dp" />
+
+        <LinearLayout
+            android:id="@+id/ll6"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="12dp"
+            android:layout_marginEnd="24dp"
+            android:orientation="vertical"
+            app:layout_constraintTop_toBottomOf="@+id/view4">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:padding="4dp"
+                android:text="win upto Rs 1000"
+                android:textColor="@color/white"
+                android:textSize="12sp"
+                android:textStyle="bold"
+                app:drawableEndCompat="@drawable/line_angle_right_icon" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:padding="4dp"
+                android:text="refer and earn"
+                android:textColor="@color/text_color_dark"
+                android:textSize="10sp" />
+
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/transaction_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="24dp"
+            android:gravity="center_vertical"
+            android:text="TRANSACTIONS AND SUPPORT"
+            android:textColor="@color/text_color_dark"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/ll6" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_margin="24dp"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:padding="4dp"
+            android:text="all transaction"
+            android:textColor="@color/text_color_light"
+            android:textSize="12sp"
+            app:drawableEndCompat="@drawable/line_angle_right_icon"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/transaction_tv" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</LinearLayout>
