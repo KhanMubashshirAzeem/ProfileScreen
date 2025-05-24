@@ -19,7 +19,7 @@ This is a basic Android app demonstrating a **profile screen** with a circular p
 ## 📸 Screenshots
 
 **Profile Screen**  
-![Screenshot](https://github.com/user-attachments/assets/0b4b6eef-86c2-4668-b74b-9b9fb316b2b1)
+<img src="https://github.com/user-attachments/assets/0b4b6eef-86c2-4668-b74b-9b9fb316b2b1" alt="Screenshot" width="300"/>
 
 ---
 
